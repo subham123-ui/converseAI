@@ -1,0 +1,4 @@
+export const DEFAULT_PAGE = 1; // DEFAULT_PAGE
+export const DEFAULT_PAGE_SIZE = 10; // DEFAULT_PAGE_SIZE
+export const MAX_PAGE_SIZE = 100; // MAX_PAGE_SIZE
+export const MIN_PAGE_SIZE = 1; // MIN_PAGE_SIZE
