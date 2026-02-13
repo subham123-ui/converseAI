@@ -14,7 +14,7 @@ export const DashboardCommand = ({ open, setOpen }: Props) => {
       <CommandInput placeholder="Type a command or search..." />
       <CommandList>
         <CommandItem >
-Test
+{/*  */}
         </CommandItem>
       </CommandList>
     </CommandResponsiveDialog>
