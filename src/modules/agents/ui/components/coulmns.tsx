@@ -1,15 +1,15 @@
 "use client";
 
 import { GeneratedAvatar } from "@/components/generated-avatar";
+import { Badge } from "@/components/ui/badge";
 import { ColumnDef } from "@tanstack/react-table";
 import { CornerDownRightIcon, VideoIcon } from "lucide-react";
-import { AgentGetOne } from "../../types";
-import { Badge } from "@/components/ui/badge";
+import { AgentGetMany } from "../../types";
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
-export const columns: ColumnDef<AgentGetOne>[] = [
+export const columns: ColumnDef<AgentGetMany[number]>[] = [
   {
     accessorKey: "name",
     header: "Agent Name",
@@ -24,7 +24,7 @@ export const columns: ColumnDef<AgentGetOne>[] = [
           <span className="font-semibold capitalize">{row.original.name}</span>
         </div>
 
-        <div className="flex items-center gap-x-1.5">
+        <div className="flex items-center gap-x-2">
           <CornerDownRightIcon className="size-3 text-muted-foreground" />
           <span className="text-sm text-muted-foreground max-w-[200px] truncate capitalize">
             {row.original.instructions}
