@@ -38,7 +38,7 @@ export const useConfirm = (
       title={title}
       description={description}
     >
-      <div className="flex  pt-4 w-full  flex-col-reverse gap-y-2 lg-flex-row gap-x-2 items-center justify-end">
+      <div className="flex  pt-4 w-full  flex-col-reverse gap-y-2 lg:flex-row gap-x-2 items-center justify-end">
         <Button 
         onClick={handleConfirm}
         className="w-full lg:w-auto"
