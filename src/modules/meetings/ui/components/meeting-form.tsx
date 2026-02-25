@@ -177,7 +177,7 @@ export const MeetingForm = ({
           )}
         />
 
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-between gap-2">
           {onCancel && (
             <Button
             variant="ghost"
@@ -189,7 +189,7 @@ export const MeetingForm = ({
             </Button>
           )}
           <Button type="submit" disabled={isPending}>
-            {isEdit ? "Update Agent" : "Create Agent"}
+            {isEdit ? "Update" : "Create" }
             {/* {isPending && <span className="ml-2">Loading...</span>} */}
           </Button>
         </div>
